@@ -1,0 +1,51 @@
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario con funciones aritmeticas</title> 
+    </head>
+    
+    <body>
+
+        <h1 style="text-align: center;">Operaciones básicas</h1>
+        <form action="">
+            <table border="1" align="center">
+                <tr>
+                    <td>
+                        Ingrese valor 1:
+                        <input type="number" name="a" id="a">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Ingrese valor: 2
+                        <input type="number" name="b" id="b">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="button" value="Calcular" onclick="calcular();">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        
+        <script>
+            function calcular() {
+                var num1= parseInt (document.getElementById('a').value);
+                var num2= parseInt (document.getElementById('b').value);
+                var suma= num1 + num2;
+                var resta= num1 - num2;
+                alert('La suma es: '+suma+' La resta es: '+resta);
+            }
+        </script>
+  
+    </body>
+
+
+</html>
